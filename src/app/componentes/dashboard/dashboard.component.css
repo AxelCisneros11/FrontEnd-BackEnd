@@ -1,0 +1,11 @@
+.container {
+    background-image: url('https://img.freepik.com/vector-premium/vape-patron-fondo-cigarrillos-electronicos_198278-861.jpg?w=2000');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edeae4;
+  }

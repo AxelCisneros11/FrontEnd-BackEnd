@@ -1,0 +1,14 @@
+.container {
+    height: 93.75vh;
+  }
+  
+  .menu {
+    width: 250px;
+  }
+  
+  .menu-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  /* Ejemplo de estilos CSS para los elementos */

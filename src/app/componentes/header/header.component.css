@@ -1,0 +1,91 @@
+/* header.component.css */
+.mat-toolbar {
+    background-color: white; /* Puedes cambiar este color por el que desees */
+    height: 60px; /* Ajusta la altura según tus preferencias */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #007bff;
+    font-size: 24px;
+  }
+  img{
+    display: block;
+    width: 40px; /* Ancho de la imagen (ajústalo según el tamaño que desees) */
+  height: 40px; /* Alto de la imagen (ajústalo según el tamaño que desees) */
+  border-radius: 50%; /* Para que la imagen sea un círculo */
+    margin-bottom: 10px; /* Espaciado inferior para separar la imagen del texto */  
+    margin-right: 10px;
+  }
+
+  .img{
+    display: flex;
+    align-items: center;
+  }
+
+  .usuarioLog{
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+
+  }
+
+  .center{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .container {
+    display: flex; /* Usamos flexbox para permitir que los elementos se acomoden en fila */
+    height: 100vh; /* Ajustamos la altura del contenedor al 100% de la vista */
+    overflow: hidden; /* Ocultamos el contenido que se desborde del contenedor */
+  }
+  
+  .NomImg {
+    /* Estilos para la imagen */
+    display: block;
+    width: 50px; /* Ajusta el ancho de la imagen */
+    height: 50px; /* Ajusta el alto de la imagen */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    margin-bottom: 10px; /* Espaciado inferior para separar la imagen del texto */  
+    margin-right: 10px;
+    background-color: rgb(252, 252, 252); /* Cambia el color de fondo del contenedor de la imagen */
+  }
+  
+  .sidebar {
+    position: absolute;
+  left: -270px; /* Inicialmente, la barra lateral está fuera de la vista */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #007bff;
+  padding: 10px;
+  transition: left 0.3s;
+  }
+  
+  .container.open .sidebar {
+    /* Ajustamos la posición de la barra lateral cuando está abierta */
+    left: 0;
+  }
+  
+  .container.open  {
+    /* Ajustamos el margen izquierdo del contenido principal cuando la barra lateral está abierta */
+    margin-left: 250px;
+  }
+  .active-link{
+    color: #ccc;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .menu-icon{
+    background-color: transparent;
+    border: 0;
+    color: white;
+  }
+  .text-center{
+    content: center;
+  }

@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="login-container">
+    <div class="form-title">Iniciar Sesión</div>
+    <div class="form-subtitle">
+      Ingresa tus datos para iniciar sesión en tu cuenta
+    </div>
+    <input
+      type="email"
+      [(ngModel)]="usuario"
+      class="input"
+      placeholder="Usuario"
+    />
+    <div class="error" *ngIf="emailErrorMessage">
+      <i class="material-icons">error</i>
+      <div class="error-message">{{ emailErrorMessage }}</div>
+    </div>
+    <div class="spacer" *ngIf="!emailErrorMessage"></div>
+    <input
+      [(ngModel)]="contrasena"
+      type="password"
+      class="input"
+      placeholder="Contraseña"
+    />
+    <div class="error" *ngIf="passwordErrorMessage">
+      <i class="material-icons">error</i>
+      <div class="error-message">{{ passwordErrorMessage }}</div>
+    </div>
+    <div class="spacer" *ngIf="!passwordErrorMessage"></div>
+
+    <button (click)="onSubmit()" class="submit-button">Iniciar Sesión</button>
+
+    <div class="register-link">
+      ¿No tienes cuenta?
+      <a routerLink="/registro"> Regístrate aquí.</a>
+    </div>
+  </div>
+</div>

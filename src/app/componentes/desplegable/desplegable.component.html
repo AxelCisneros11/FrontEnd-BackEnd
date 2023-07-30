@@ -1,0 +1,27 @@
+<mat-sidenav-container class="container">
+    <mat-sidenav mode="side" [opened]="isMenuOpen" class="menu">
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="['/dashboard']">
+           Dashboard
+        </a>
+        <a mat-list-item [routerLink]="['/usuarios']">
+           Usuarios
+        </a>
+        
+        <a mat-list-item [routerLink]="['/productos']">
+           Productos
+        </a>
+      </mat-nav-list>
+      <button mat-fab class="menu-button" (click)="toggleMenu()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+      <!-- Contenido principal del componente -->
+      <button mat-fab class="menu-button" (click)="toggleMenu()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  
